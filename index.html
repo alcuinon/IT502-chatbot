@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Simple Chatbot UI</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <main class="app" role="main">
+    <header>
+      <div class="logo">AI</div>
+      <div>
+        <h1>Chatbot</h1>
+        <p class="lead">A chatbot to help you for your cooking recipes</p>
+      </div>
+    </header>
+
+    <section class="chat-wrap" aria-label="chat container">
+      <div id="messages" class="messages" role="log" aria-live="polite"></div>
+
+      <div class="input-row">
+        <div class="input" role="group" aria-label="message input">
+          <input id="messageInput" type="text" placeholder="Write a message... (Press Enter to send)" autocomplete="off" />
+          <button id="attach" class="btn secondary" title="Quick actions">⋯</button>
+        </div>
+        <button id="sendBtn" class="btn" aria-label="Send message">Send</button>
+      </div>
+
+
+    </section>
+
+    <footer class="info">
+      <span></span>
+      <span id="status">Ready</span>
+    </footer>
+  </main>
+
+
+  <script src="index.js"></script>
+</body>
+</html>
